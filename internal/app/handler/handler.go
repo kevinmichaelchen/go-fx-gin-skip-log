@@ -42,7 +42,7 @@ func NewGinEngine(
 	gin.SetMode(gin.ReleaseMode)
 
 	// Create Gin router
-	r := gin.Default()
+	r := gin.New()
 
 	r.Use(
 		gin.LoggerWithConfig(gin.LoggerConfig{
